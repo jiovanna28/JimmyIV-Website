@@ -1,0 +1,107 @@
+/* General page styles */
+body {
+    font-family: 'Merriweather Sans', sans-serif;  /* Default font for body text */
+    background-color: #f4f2e1;  /* Light earthy background (like sand or soft yellow) */
+    color: #4d4d4d;  /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Header at the top of the page */
+header {
+    background-color: #81c784;  /* Soft jungle green */
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 6rem;
+    color: #a76f01;  /* Deep green */
+    margin: 0;
+    font-family: 'Hanalei Fill', cursive;  /* HLF for the main title */
+    font-weight: bold;  /* HLF is already bold, so no need to override */
+}
+
+/* Subheadings */
+h2 {
+    font-size: 2.5rem;
+    color: #f7c12f;  /* Muted golden yellow (earthy tone) */
+    margin-bottom: 20px;
+    font-family: 'Barrio', sans-serif;  /* Barrio for subheadings */
+}
+
+/* Music section */
+section {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Music list styles */
+#music-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+#music-list div {
+    background-color: #fff;  /* White background for song container */
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#music-list audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* Song titles */
+#music-list p {
+    font-size: 1.6rem;
+    color: #2c6e49;  /* Deep green for song titles */
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Hover effects */
+#music-list div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#music-list audio:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons or other sections if needed */
+button {
+    background-color: #f7c12f;  /* Muted golden yellow (earthy tone) */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #81c784;  /* Soft jungle green on hover */
+}
